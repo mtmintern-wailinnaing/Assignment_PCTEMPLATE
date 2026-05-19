@@ -69,8 +69,6 @@ body {
 }
 
 
-
-
 /* header section  */
 .header-sec {
   margin-top: 40px;
@@ -167,10 +165,6 @@ body {
   padding: 9px 18px;
 }
 
-
-
-
-
 /* service and work section  */
 .cmn__ttl {
   font-size: 32px;
@@ -180,7 +174,6 @@ body {
   position: relative;
   padding: 61px 0px 39px 0px;
 }
-
 
 .cmn__ttl::before {
   content: "";
@@ -208,19 +201,19 @@ body {
   flex-wrap: wrap;
   row-gap: 20px;
 }
-
 .service-card {
-  width: 225px;
-  box-sizing: border-box;
-  padding: 21px 18px;
-  background-color: #ffffff;
-  display: flex;
-  flex-direction: column;
-  justify-content: baseline;
-  gap: 15px;
-  align-items: center;
+    width: 225px;
+    box-sizing: border-box;
+    padding: 22px 18px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
 }
-
+.service__img{
+  padding:0px 20px;
+}
 .service-card:hover,
 .service-card.active {
   cursor: pointer;
@@ -242,21 +235,21 @@ body {
   text-align: center;
   letter-spacing: 0.5px;
   color: var(--text-secondary-color);
+  padding-top: 5px;
 }
 
 .works {
   gap: 30px;
-  row-gap: 30px;
+  row-gap: 20px;
   flex-wrap: wrap;
-  padding-bottom: 116px;
+  padding-bottom: 105px;
 }
 
 .work-card {
   width: 290px;
   border: 5px solid #ffffff;
   position: relative;
-  background-color: #3e3e3e;
-  margin-bottom: -11px;
+  background-color: #3e3e3e; 
 }
 
 .work-card:hover,
@@ -266,16 +259,16 @@ body {
 }
 
 .work-des {
-  display: block;
-  font-size: 14px;
-  line-height: 16.8px;
-  text-align: center;
-  color: #ffffff;
-  text-transform: uppercase;
-  padding: 6px;
+display: block;
+    font-size: 14px;
+    line-height: 16.8px;
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding: 4px 0px 6px 0px;
 }
 
-/* footer section  */
+/* footer section  */ 
 .footer-sec {
   box-sizing: border-box;
   background-color: #444444;
@@ -285,22 +278,22 @@ body {
 }
 
 .footer__item {
-  width: 25%;
+  width: 25%; 
   margin-top: 35px;
 }
 
 .ft__ttl {
-  font-size: 17px;
-  line-height: 19.2px;
-  color: var(--text-primary-color);
+    font-size: 16px;
+    line-height: 19.2px; 
+    color: var(--text-primary-color);
+    letter-spacing: 0.5px;
 }
 
 .ft__sec-ttl {
   font-size: 16px;
   line-height: 15.6px;
   font-weight: bolder;
-  padding-top: 30px;
-  margin-left: -1px;
+  padding-top: 30px;  
   color: var(--border-primary-color);
 }
 
@@ -308,7 +301,7 @@ body {
   font-size: 12px;
   line-height: 1.2;
   color: var(--text-secondary-color);
-  margin-left: -1px;
+  
   padding-top: 12px;
 }
 
@@ -348,8 +341,13 @@ body {
   padding-top: 35px;
   font-size: 13px;
 }
-
-.quick-link {
+.quick-link:hover,
+.rd-more-link:hover,
+.tweet__link:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--border-primary-color);
+}
+.quick-link {  
   height: 35px;
 }
 
@@ -433,6 +431,13 @@ body {
   font-size: 14px;
   line-height: 1;
   color: var(--text-secondary-color);
+}
+
+.sub-btn:hover,
+.banner__btn:hover {
+  background-color: #ffffff;
+  color: var(--text-secondary-color);
+  cursor: pointer;
 }
 
 /* burger menu add  */
